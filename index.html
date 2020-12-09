@@ -9,25 +9,122 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      display: flexbox;
+    }
+    .logo{
+      margin-bottom: 6.2em;
+    }
+    .article{
+      float: left;
+      width: 55.4%;
+      height: 100vh;
+      background-color: hsl(0, 100%, 98%);
+      background-image: url(img/bg-pattern-desktop.svg);
+    }
+    .insideArticle{
+      display: inline-block;
+      font-size: 1em;
+      font-family: 'Josefin Sans', sans-serif;
+      padding: 4em 10em 4em 10em;
+    }
+    .insideArticle h1{
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      font-size: 3.2em;
+      margin-bottom: 0.2em;
+    }
+    .insideArticle .were{
+      color: hsl(0, 36%, 70%);
+      font-weight: 300;
+      top: 0.1em;
+    }
+    .insideArticle .soon{
+      bottom: 0.1em;
+    }
+    .insideArticle .coming, .soon{
+      font-weight: 700;
+    }
+    .insideArticle .were, .soon{
+      position: relative;
+    }
+    .hero{
+      float: right;
+      width: 44.6%;
+      height: 100vh;
+      background-image: url(img/hero-desktop.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    article .paragraph{
+      color: hsl(0, 36%, 70%);
+      margin-bottom: 2em;
+    }
+    input[type=email]{
+      width: 130px;
+      box-sizing: border-box;
+      border: 0.15em solid #000;
+      border-radius: 2em;
+      font-size: 0.8em;
+      background-color: white;
+      background-image: url('img/icon-arrow.svg');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 0.9em 1.175em 0.9em 1.8em;
+      -webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+    }
+    input[type=email]:hover{
+      width: 100%;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+<main>
+  <div class="content">
+    <div class="article">
+      <div class="insideArticle">
+        <header>
+          <div class="logo">
+          <img src="img/logo.svg" alt="">
+          </div>
+        </header>
+        <article>
+          <h1>
+            <span class="were">We're<br/></span>
+            <span class="coming">coming<br/></span>
+            <span class="soon">soon</span>
+          </h1>
 
-  We're coming soon
+          <div class="paragraph">
+            <p>Hello fellow shoppers! We're currently building our new fashion store.</p>
+            <p>Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          </div>
+          <form action="">
+            <fieldset>
+              <input type="email" placeholder="Email Address">
+            </fieldset>
+          </form>
+        </article>
+      </div>
+    </div>
+    <div class="hero">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    </div>
+  </div>
+</main>  
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
+</footer>
 </body>
 </html>
